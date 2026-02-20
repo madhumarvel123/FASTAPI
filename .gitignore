@@ -1,3 +1,6 @@
 /.mypy_cache
 /.venv
 /__pycache__
+/destination.png
+
+destination.png
