@@ -79,7 +79,7 @@ app = FastAPI()
 def create_cookie():
     content = {"message": "cookie set"}
     response = JSONResponse(content=content)
-    response.set_cookie(key="username", value="admin")
+    response.set_cookie(key="username", value="admin", max_age=20, httponly=True, secure=True)
     return response
 
 
