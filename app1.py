@@ -1,5 +1,5 @@
 from fastapi.responses import HTMLResponse
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI, File, UploadFile, HTTPException
 import uvicorn
 from fastapi.templating import Jinja2Templates
 from fastapi import FastAPI, Request
@@ -129,7 +129,7 @@ from fastapi.responses import JSONResponse
 #     return c1   
 
 
-app = FastAPI()
+
 data = []
 class Book(BaseModel):
     id: int
